@@ -8,5 +8,7 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
       />
-
+  <item android:id="@+id/action_search"
+          android:title="search"
+         />
 </menu>

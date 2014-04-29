@@ -19,6 +19,7 @@ public class Fragment_class extends android.support.v4.app.Fragment implements M
 				false);
 		tv=(TextView) root.findViewById(R.id.updation);
 		tv.setText("Default");
+		setHasOptionsMenu(true);
 		return root;
 	}
 

@@ -31,9 +31,9 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
  
-        mTitle = "test";
- 
-        mPlanetTitles = new String[]{"one", "two", "three"};
+        mTitle = "Employe Details";
+        
+        mPlanetTitles = new String[]{"Employee List", "Create New Employe", "Edit Employee"};
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
  
@@ -83,6 +83,7 @@ public class MainActivity extends ActionBarActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
+        
         return true;
     }
  
@@ -103,6 +104,7 @@ public class MainActivity extends ActionBarActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         // Pass the event to ActionBarDrawerToggle, if it returns
         // true, then it has handled the app icon touch event
+    	
         if (mDrawerToggle.onOptionsItemSelected(item)) {
             return true;
         }
