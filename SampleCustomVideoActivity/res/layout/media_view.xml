@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2012 Amazon.com, Inc. or its affiliates. All Rights Reserved. -->
+<!-- $Revision: #2 $, $Date: 2012/09/04 $ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/media" >
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        style="@style/media.surface"
+        android:layout_centerInParent="true" />
+
+    <com.amazon.sample.video.view.StatusBarView
+        android:id="@+id/statusBar"
+        style="@style/overlay"
+        android:layout_alignParentTop="true" />
+
+    <com.amazon.sample.video.view.ControlBarView
+        android:id="@+id/controlBar"
+        style="@style/overlay"
+        android:layout_alignParentBottom="true" />
+
+    <com.amazon.sample.video.view.VolumeControlView
+        android:id="@+id/volumeControlView"
+        style="@style/overlay.volume"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/statusBar" />
+
+</RelativeLayout>

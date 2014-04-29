@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2012 Amazon.com, Inc. or its affiliates. All Rights Reserved. -->
+<!-- $Revision: #2 $, $Date: 2012/09/04 $ -->
+<resources>
+    <color name="transparent_charcoal">#BF4D4D4D</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="green">#00FF00</color>
+    <color name="transparent_orange">#BFFF6600</color>
+</resources>

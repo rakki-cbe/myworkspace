@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2012 Amazon.com, Inc. or its affiliates. All Rights Reserved. -->
+<!-- $Revision: #3 $, $Date: 2012/09/04 $ -->
+<resources>
+    <string name="app_name">Sample Custom Video</string>
+
+    <string name="text_button_play">Play</string>
+    <string name="text_button_pause">Pause</string>
+    <string name="text_button_stop">Stop</string>
+    <string name="text_buffering">Buffer: %d%%</string>
+    <string name="text_default_url">http://publiclyaccessible.s3.amazonaws.com/KindleR3.mp4</string>
+    <string name="text_status_completed">Completed</string>
+    <string name="text_status_invalid_content">Invalid Video Content</string>
+    <string name="text_status_invalid_url">Invalid URI</string>
+    <string name="text_status_stoped">Stopped</string>
+    <string name="text_status_preparing">Loading</string>
+    <string name="text_status_error">Error</string>
+    <string name="text_stop_error">No video to stop.</string>
+    <string name="text_url">URI</string>
+
+    <string name="img_audio_mute_desc">Mute</string>
+    <string name="img_audio_loud_desc">Loud</string>
+
+    <string name="tag_status_bar">Status</string>
+    <string name="tag_control_bar">Control</string>
+
+    <string name="log_pause_button_clicked">Pause button was clicked.</string>
+    <string name="log_play_button_clicked">Play button was clicked.</string>
+    <string name="log_prepare_error">Error preparing content.  URI or SurfaceHolder is null.</string>
+    <string name="log_scaled_size">Scaled size {Width: %1$d, Height: %2$d}</string>
+    <string name="log_stop_button_clicked">Stop button was clicked.</string>
+    <string name="log_stop_error">Unable to stop.  MediaPlayer is null.</string>
+    <string name="log_surface_changed">Surface changed {Format: %1$d, Width: %2$d, Height %3$d}</string>
+    <string name="log_surface_created">Surface created.</string>
+    <string name="log_surface_destroyed">Surface destroyed.</string>
+    <string name="log_video_completed">Video completed.</string>
+    <string name="log_video_info">Video info {What: %1$s, Extra: %2$d}</string>
+    <string name="log_video_info_bad_interleaving">Bad Interleaving</string>
+    <string name="log_video_info_buffering_end">Buffering End</string>
+    <string name="log_video_info_buffering_start">Buffering Start</string>
+    <string name="log_video_info_metadata_update">Metadata Update</string>
+    <string name="log_video_info_not_seekable">Not Seekable</string>
+    <string name="log_video_info_video_track_lagging">Video Track Lagging</string>
+    <string name="log_video_info_unkown">Unknown</string>
+    <string name="log_video_error">Video error {What: %1$d, Extra: %2$d}</string>
+    <string name="log_video_prepared">Video prepared.</string>
+    <string name="log_video_size_changed">Video size changed {Width: %1$d, Height: %2$d}</string>
+</resources>

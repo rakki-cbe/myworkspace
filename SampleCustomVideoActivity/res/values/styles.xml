@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2012 Amazon.com, Inc. or its affiliates. All Rights Reserved. -->
+<!-- $Revision: #2 $, $Date: 2012/09/04 $ -->
+<resources>
+    <style name="media">
+        <item name="android:background">@color/black</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="media.surface">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center|center_vertical</item>
+    </style>
+
+    <style name="overlay">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="overlay.button">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="overlay.volume">
+        <item name="android:layout_width">350dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">50dp</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="control">
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <style name="control.text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="control.text.textView">
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+
+    <style name="control.text.url">
+        <item name="android:minWidth">500dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.7</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">textUri</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="control.text.status">
+        <item name="android:maxWidth">100sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="control.button">
+        <item name="android:layout_height">85dp</item>
+        <item name="android:layout_width">85dp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:cropToPadding">false</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="seekBar">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:minHeight">10dip</item>
+        <item name="android:maxHeight">10dip</item>
+    </style>
+
+    <style name="seekBar.control">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="status">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/status_bar_bg</item>
+    </style>
+</resources>

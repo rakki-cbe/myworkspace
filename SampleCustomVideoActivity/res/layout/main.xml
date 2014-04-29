@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2012 Amazon.com, Inc. or its affiliates. All Rights Reserved. -->
+<!-- $Revision: #2 $, $Date: 2012/09/04 $ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent" >
+
+    <!--  Used to prevent the textViewURL widget from gaining focus upon displaying the activity -->
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px" >
+            <requestFocus />
+        </LinearLayout>
+
+    <com.amazon.sample.video.view.MediaView
+        android:id="@+id/mediaView"
+        style="@style/media" />
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2012 Amazon.com, Inc. or its affiliates. All Rights Reserved. -->
+<!-- $Revision: #2 $, $Date: 2012/09/04 $ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/statusBarLayout"
+    style="@style/status"
+    android:tag="@string/tag_status_bar" >
+
+    <TextView
+        android:id="@+id/textViewURL"
+        style="@style/control.text.textView"
+        android:text="@string/text_url"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextURL"
+        style="@style/control.text.url"
+        android:hint="@string/text_url"
+        android:text="@string/text_default_url" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        style="@style/control.text.status"
+        android:text="" />
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2012 Amazon.com, Inc. or its affiliates. All Rights Reserved. -->
+<!-- $Revision: #2 $, $Date: 2012/09/04 $ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/statusBarLayout"
+    android:layout_width="260dp"
+    android:layout_height="40dp"
+    android:tag="Volume"
+    android:gravity="center">
+
+    <ImageButton
+        android:id="@+id/imageButtonMute"
+        style="@style/overlay.button"
+        android:src="@drawable/audio_mute"
+        android:contentDescription="@string/img_audio_mute_desc" />
+
+    <SeekBar
+        android:id="@+id/volumeSeekBar"
+        style="@style/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLoud"
+        style="@style/overlay.button"
+        android:src="@drawable/audio_loud"
+        android:contentDescription="@string/img_audio_loud_desc" />
+
+</LinearLayout>

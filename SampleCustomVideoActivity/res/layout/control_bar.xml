@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2012 Amazon.com, Inc. or its affiliates. All Rights Reserved. -->
+<!-- $Revision: #2 $, $Date: 2012/09/04 $ -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutButtons"
+    android:layout_width="fill_parent"
+    android:layout_height="95dp"
+    android:tag="@string/tag_control_bar"
+    android:background="@drawable/control_bar_bg">
+
+    <ImageButton
+        android:id="@+id/playImageButton"
+        style="@style/control.button"
+        android:state_enabled="true"
+        android:contentDescription="@string/text_button_play"
+        android:src="@drawable/button_play_images" >
+
+        <requestFocus />
+    </ImageButton>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/seekBar.control" />
+
+</LinearLayout>
