@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <SurfaceView android:id="@+id/surfaceview"
+        android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="20dp" />
+    <Button android:id="@+id/mBtnmore" android:layout_width="wrap_content"
+        android:layout_height="35dip" android:text="More"
+        android:layout_marginRight="5dip" android:layout_alignParentRight="true"
+        android:layout_marginTop="8dip" />
+    <Button android:id="@+id/repeat" android:layout_width="wrap_content"
+        android:layout_marginBottom="4dip" android:layout_height="35dip"
+        android:text="Replay" android:layout_marginRight="5dip"
+        android:layout_alignParentRight="true" android:onClick="relpay"
+        android:layout_alignParentBottom="true" />
+    <SeekBar android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:id="@+id/seekbar" android:layout_toLeftOf="@+id/repeat"/>
+</RelativeLayout>
+
