@@ -2,31 +2,38 @@ package com.example.drwernavifor8;
 
 
 
+import android.annotation.SuppressLint;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
+	/***Interface to communicate wirth other fragments***/
 	OnHeadlineSelectedListener mCallback;
 	public interface OnHeadlineSelectedListener {
         public void onArticleSelected(String position);
     }
+	/***Interface to communicate with other fragments***/
     private String[] mPlanetTitles;
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
     private CharSequence mTitle;
     private ActionBarDrawerToggle mDrawerToggle;
  
-    @Override
+    @SuppressLint("NewApi")
+	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -36,7 +43,22 @@ public class MainActivity extends ActionBarActivity {
         mPlanetTitles = new String[]{"Employee List", "Create New Employe", "Edit Employee"};
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
- 
+        /***THis will be used to creatre a custom action bar **/
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.actionbar);
+        /***THis will be used to creatre a custom action bar click listener **/
+        View v =getSupportActionBar().getCustomView();
+        ((Button)v.findViewById(R.id.smaple_click)).setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				/*****interface used to set the text into another fragment******/
+				mCallback.onArticleSelected(" clicked the sample button");
+			}
+		});
+        /***THis will be used to create a custom action bar click listener ends**/
+        /***THis will be used to create a custom action bar ends **/
         // Set the adapter for the list view    
         mDrawerList.setAdapter(new ArrayAdapter<String>(this,
                 R.layout.drawer_list_item, mPlanetTitles));
@@ -76,14 +98,20 @@ public class MainActivity extends ActionBarActivity {
         }
         getSupportFragmentManager().beginTransaction().add(R.id.content_frame,fl ).commit();
        
-
-    }
+       }
  
-    @Override
+    @SuppressLint("NewApi")
+	@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
-        
+        /*SearchManager searchManager =
+                (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+         SearchView searchView =
+                 (SearchView) menu.findItem(R.id.action_search).getActionView();
+         searchView.setSearchableInfo(
+                 searchManager.getSearchableInfo(getComponentName()));*/
+
         return true;
     }
  
